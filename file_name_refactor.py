@@ -2,10 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import os
-import pandas as pd
 from pick import pick
 
-def get_csv_list():
+def get_sound_directory_list():
     directories = [os.path.join(freelancer_path, x) for x in os.listdir(freelancer_path)]
     directories = [x for x in directories if os.path.isdir(x)]
     files = []
@@ -30,7 +29,7 @@ if __name__ == "__main__":
     # 単語を抽出してくるファイルとエクスポート先のファイルを選択
     title                           = 'Please choose the csv file to inspect acceptance.'
     freelancer_path                 = 'freelancers'
-    options                         = get_csv_list()
+    options                         = get_sound_directory_list()
     option, index                   = pick(options, title)
 
     sounds                          = get_sound_files_list(option)
