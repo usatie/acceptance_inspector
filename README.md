@@ -35,5 +35,6 @@ acceptance_inspector/
 ![](https://github.com/usatie/acceptance_inspector/blob/master/Assets/set_num.png)
 
 3. 実行結果では、「リスト内に存在しないのにあるファイル」「リストにあるのに、見つからないファイル」「違うフォーマットで保存されているファイル」が表示されます。
-これらは明らかにミスなので、ファイル名の修正や追加が必要になります。
+表示された場合は明らかにミスなので、ファイル名の修正や追加が必要になります。
+例えば、結果が出た時こんな結果が出た時はスペルミスをしていたことがすぐにわかります。
 ![](https://github.com/usatie/acceptance_inspector/blob/master/Assets/result.png)
